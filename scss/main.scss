@@ -1,4 +1,4 @@
-@import '~bootstrap/scss/bootstrap.scss';
+@import 'fonts';
 
 .head {
     display: flex;
@@ -23,3 +23,91 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+
+.nav {
+    width: 100%;
+    height: 70px;
+    min-height: 70px;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 0%;
+}
+
+@media (min-width: 800px) {
+    .nav {
+        width: 70%;
+    }
+}
+
+.logoWrapper {
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 1 0%;
+}
+
+.logo {
+    width: 205px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.navBar {
+    font-family: SimplonNorm-Medium, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 55px;
+    z-index: 2000;
+}
+
+@media (min-width: 800px) {
+    .navBar {
+        box-shadow: none;
+        display: flex;
+        background-color: transparent;
+        letter-spacing: 1.5px;
+        line-height: 22.5px;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+        flex-direction: row;
+        font-size: 15px;
+        animation: 0s ease 0s 1 normal none running none;
+    }
+}
+
+.navOption {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: black;
+    margin: 0px 15px;
+    padding: 15px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+@media (min-width: 800px) {
+    .navOption {
+        color: white;
+        padding: 0px;
+        border-bottom: none;
+    }
+
+    .navOption a:link, .navOption a:visited, .navOption a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    
+}
+
+
+
+

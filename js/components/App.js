@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container'
 import VerisartLogo from '../../assets/images/verisartLogo.svg'
 
 export const App = () => (
-        <Container>
+        <div className="app">
             <div className="head">
                 <div className="gdprBanner">
                     We use cookies to improve your user experience on our site. By using Verisart you agree to our 
@@ -14,12 +14,10 @@ export const App = () => (
                         <a href="/"><img className="logo" src={VerisartLogo}></img></a>
                     </div>
                     <nav className='navBar'>
-                        <div className="navOption">
-                            <a href="/news">news</a>
-                            <a href="/partners">partners</a>
-                            <a href="/join">join</a>
-                            <a href="/login">log in</a>
-                        </div>
+                            <div className="navOption"><a href="/news">news</a></div>
+                            <div className="navOption"><a href="/partners">partners</a></div>
+                            <div className="navOption"><a href="/join">join</a></div>
+                            <div className="navOption"><a href="/login">log in</a></div>
                     </nav>
                 </div>
             </div>
@@ -29,7 +27,7 @@ export const App = () => (
                 <div className="history">History</div>
             </div>
             <div className="footer">footer</div>
-        </Container>
+        </div>
     )
 
 export default App

@@ -18,6 +18,7 @@
     "bootstrap": "^4.4.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.9.0",
@@ -65,7 +66,11 @@
     ],
     "moduleNameMapper": {
       "~/(.*)$": "<rootDir>/js/$1",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/__mocks__/fileMock.js",
       "\\.(css|scss)$": "identity-obj-proxy"
-    }
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

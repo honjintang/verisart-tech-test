@@ -1,1 +1,25 @@
 @import '~bootstrap/scss/bootstrap.scss';
+
+.head {
+    display: flex;
+    background-color: black;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gdprBanner {
+    width: 100%;
+    background-color: rgb(0, 178, 66);
+    text-align: center;
+    letter-spacing: 0.15em;
+    font-size: 10px;
+    font-family: SimplonNorm-Medium, Helvetica, sans-serif;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}

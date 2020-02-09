@@ -1,16 +1,17 @@
 import React from 'react'
-import Header from '~/components/display/Header'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
+import Login from '~/components/pages/Login'
+import Certificate from '~/components/pages/Certificate'
 
 export const App = () => (
-        <div className="app">
-            <Header />
-            <div className="main">
-                <div className="certificate">Cert</div>
-                <div className="files">Files</div>
-                <div className="history">History</div>
-            </div>
-            <div className="footer">footer</div>
-        </div>
-    )
+    <div className="page">
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/works/:certNumber" component={Certificate} />
+                <Route exact path="/login" component={Login} />
+            </Switch> 
+        </BrowserRouter>
+    </div>
+)
 
 export default App

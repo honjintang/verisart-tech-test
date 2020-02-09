@@ -1,5 +1,25 @@
 @import 'fonts';
 
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100vw;
+    padding: 0px 10px 30px;
+}
+
+@media (min-width: 600px) {
+    .page {
+        width: auto;
+        padding: 10px;
+    }
+}
+
 .head {
     display: flex;
     background-color: black;
@@ -107,6 +127,229 @@
     }
     
 }
+
+.loginTitle {
+    font-weight: normal;
+    padding-left: 5px;
+    text-transform: uppercase;
+    font-family: SimplonNorm-Bold, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.125em;
+    -webkit-font-smoothing: antialiased;
+    padding-top: 50px;
+    width: 100%;
+    max-width: 556px;
+    margin: 15px 0px;
+}
+
+@media (min-width: 600px) {
+    .loginTitle {
+        margin-top: 0px;
+        padding-top: 70px;
+        padding-left: 0px;
+    }
+}
+
+.loginBox {
+    width: 100%;
+    max-width: 556px;
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    background: white;
+    margin: 5px;
+}
+
+.loginFormWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginFormContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+}
+
+@media (min-width: 600px) {
+    .loginFormContent {
+        flex-direction: column;
+        padding: 0px;
+    }
+}
+
+.loginWithEmail {
+    padding-bottom: 20px;
+    flex: 1 1 0%;
+}
+
+@media (min-width: 600px) {
+    .loginWithEmail {
+        padding-bottom: 0px;
+    }
+}
+
+.textInputWrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    overflow: visible;
+}
+
+.textInput {
+    position: relative;
+    width: 100%;
+    font-family: FreightMedium, Georgia, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(220, 220, 220);
+    border-image: initial;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.loginSpacing {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .loginSpacing {
+        -webkit-box-pack: start;
+        align-items: flex-start;
+        margin-top: 15px;
+        flex: 1 1 0%;
+    }
+}
+
+.loginFooter {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.loginButton {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-family: SimplonNorm-Bold, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    width: 100%;
+    outline: none;
+    text-decoration: none;
+    transition: all 250ms ease-in-out 0s;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-image: initial;
+    padding: 15px 0px;
+}
+
+.forgotPasswordWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.forgotPassword {
+    color: rgb(220, 220, 220);
+    font-family: FreightTextProBook-Regular, Georgia, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.loginWithSocial {
+    margin-top: 20px;
+    flex: 1 1 0%;
+}
+
+@media (min-width: 600px) {
+    .loginWithSocial {
+        margin-top: 50px;
+    }
+}
+
+.loginWithSocialWrapper {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.loginSocialButton {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    font-family: SimplonNorm-Medium, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.125em;
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    height: 42px;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(220, 220, 220);
+    border-image: initial;
+    transition: all 200ms ease-in-out 0s;
+}
+
+.loginSocialIcon {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.loginSocialLabel {
+    display: flex;
+    flex: 1 1 0%;
+}
+
+svg {
+    fill: currentColor;
+}
+
+
 
 
 

@@ -24,26 +24,28 @@ const Login = () => (
                         <div className="forgotPasswordWrapper">
                             <a className="forgotPassword" href="/forgot-password">Forgot Password</a>
                         </div>
-                        <div className="loginWithSocial">
-                            <div className="loginWithSocialWrapper">
-                                <div className="loginSocialButton">
-                                    <div className="loginSocialIcon">
-                                        <img className="socialIcon" src={fb} width="36px" height="36px" />
-                                    </div>
-                                    <div className="loginSocialLabel">
-                                        Login with Facebook
+                        <div className="socialWrapper">
+                            <div className="loginWithSocial">
+                                <div className="loginWithSocialWrapper">
+                                    <div className="loginSocialButton">
+                                        <div className="loginSocialIcon">
+                                            <img className="socialIcon" src={fb} width="22.5px" height="22.5px"/>
+                                        </div>
+                                        <div className="loginSocialLabel">
+                                            Login with Facebook
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="loginWithSocial">
-                            <div className="loginWithSocialWrapper">
-                                <div className="loginSocialButton">
-                                    <div className="loginSocialIcon">
-                                        <img className="socialIcon" src={google} width="36px" height="36px" />
-                                    </div>
-                                    <div className="loginSocialLabel">
-                                        Login with Google
+                            <div className="loginWithSocial">
+                                <div className="loginWithSocialWrapper">
+                                    <div className="loginSocialButton">
+                                        <div className="loginSocialIcon">
+                                            <img className="socialIcon" src={google} width="36px" height="36px" />
+                                        </div>
+                                        <div className="loginSocialLabel">
+                                            Login with Google
+                                        </div>
                                     </div>
                                 </div>
                             </div>

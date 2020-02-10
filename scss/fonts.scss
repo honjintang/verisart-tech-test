@@ -13,3 +13,19 @@
     font-style: normal;
     font-display: fallback;
   }
+
+  @font-face {
+    font-family: "FreightMedium";
+    src: url('/assets/fonts/FreigTexMed.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: "FreightTextProBook-Regular";
+    src: url('/assets/fonts/FreightTextProBook.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+  }

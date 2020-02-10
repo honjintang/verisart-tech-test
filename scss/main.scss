@@ -152,13 +152,11 @@ body {
 }
 
 .loginBox {
-    width: 100%;
-    max-width: 556px;
+    width: 320px;
     text-align: center;
     position: relative;
     padding: 15px;
     background: white;
-    margin: 5px;
 }
 
 .loginFormWrapper {
@@ -203,7 +201,7 @@ body {
 
 .textInput {
     position: relative;
-    width: 100%;
+    width: 290px;
     font-family: FreightMedium, Georgia, sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -215,6 +213,16 @@ body {
     border-image: initial;
     padding: 10px 15px;
     outline: none;
+}
+
+input::placeholder {
+    font-family: SimplonNorm-Medium, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.125em;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: rgb(220, 220, 220);
 }
 
 .loginSpacing {
@@ -289,15 +297,13 @@ body {
     text-decoration: none;
 }
 
+.socialWrapper {
+    margin-top: 50px;
+}
+
 .loginWithSocial {
     margin-top: 20px;
     flex: 1 1 0%;
-}
-
-@media (min-width: 600px) {
-    .loginWithSocial {
-        margin-top: 50px;
-    }
 }
 
 .loginWithSocialWrapper {
@@ -338,11 +344,15 @@ body {
     -webkit-box-align: center;
     align-items: center;
     margin-right: 5px;
+    margin-left: 5px;
+    width: 22.5px;
+    height: 22.5px;
 }
 
 .loginSocialLabel {
     display: flex;
     flex: 1 1 0%;
+    margin-left: 5px;
 }
 
 svg {

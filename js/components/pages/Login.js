@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router'
 import TextInput from '~/components/general/TextInput'
 import Button from '~/components/general/Button'
 import { login } from '~/actions'
@@ -67,7 +68,7 @@ const Login = ({ _login, email, password }) => (
     </div>
 )
 
-export default connect(
+export default withRouter(connect(
     mapStateToProps,
     mapDispatchToProps
-  )(Login)
+  )(Login))

@@ -1,0 +1,1 @@
+export const validatePassword = password => password && password.length > 7 ? null : { message: 'Password must be 8 characters long', id: 'password'}

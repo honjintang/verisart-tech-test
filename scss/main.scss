@@ -199,6 +199,15 @@ body {
     overflow: visible;
 }
 
+.errorFieldMessage {
+    color: rgb(208, 2, 27);
+    margin-top: 5px;
+    font-family: FreightTextProBook-Italic, Georgia, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    -webkit-font-smoothing: antialiased;
+}
+
 .textInput {
     position: relative;
     width: 290px;
@@ -213,6 +222,11 @@ body {
     border-image: initial;
     padding: 10px 15px;
     outline: none;
+}
+
+.errorInput {
+    color: rgb(208, 2, 27);
+    border-color: rgb(208, 2, 27);
 }
 
 input::placeholder {

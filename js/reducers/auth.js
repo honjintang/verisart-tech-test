@@ -1,6 +1,6 @@
 export const DEFAULT_STATE = {}
 
-const dummy = (state=DEFAULT_STATE, action) => {
+const auth = (state=DEFAULT_STATE, action) => {
   switch (action.type) {
     case 'DUMMY_ACTION':
       return state
@@ -9,4 +9,4 @@ const dummy = (state=DEFAULT_STATE, action) => {
   }
 }
 
-export default dummy
+export default auth

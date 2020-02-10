@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux'
-import dummyReducer from './dummyReducer'
+import auth from './auth'
+import error from './error'
 
-const rootReducer = () => combineReducers(
-  { dummyReducer }
+const rootReducer = combineReducers(
+  { auth, error }
 )
 
 export default rootReducer

@@ -1,8 +1,16 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import TextInput from '~/components/general/TextInput'
+import Button from '~/components/general/Button'
+import { login } from '~/actions'
 import fb from '../../../assets/images/fb.svg'
 import google from '../../../assets/images/google.svg'
 
-const Login = () => (
+const mapDispatchToProps = dispatch => ({
+    _login: ({ email, password }) => dispatch(login({ email, password })),
+  })
+
+const Login = ({ _login }) => (
     <div>
         <div className="loginTitle">Login</div>
         <div className="loginBox">
@@ -10,16 +18,12 @@ const Login = () => (
                 <span></span>
                 <div className="loginFormContent">
                     <div className="loginWithEmail">
-                        <div className="textInputWrapper">
-                            <input type="email" className="textInput" name="email" placeholder="Email" />
-                        </div>
+                        <TextInput type="email" name="email" placeholder="Email"  />
                         <div className="loginSpacing">
-                            <div className="textInputWrapper">
-                                <input type="password" className="textInput" name="password" placeholder="Enter Password" />
-                            </div>
+                            <TextInput type="password" name="password" placeholder="Enter Password"  />
                         </div>
                         <div className="loginFooter">
-                            <button className="loginButton">Login</button>
+                            <Button text="Login" onClickFn={_login} />
                         </div>
                         <div className="forgotPasswordWrapper">
                             <a className="forgotPassword" href="/forgot-password">Forgot Password</a>
@@ -57,4 +61,7 @@ const Login = () => (
     </div>
 )
 
-export default Login
+export default connect(
+    null,
+    mapDispatchToProps
+  )(Login)

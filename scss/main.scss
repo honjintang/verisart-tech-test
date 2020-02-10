@@ -373,6 +373,84 @@ svg {
     fill: currentColor;
 }
 
+.certWidth {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100vw;
+    padding: 0px 10px 30px;
+}
+
+.certContent {
+    width: 100%;
+    text-align: center;
+    max-width: none;
+    position: relative;
+    flex: 1 1 0%;
+    background: white;
+    margin: 5px;
+}
+
+.certWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.certBackgroundWrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transform-origin: center center;
+    background-image: url(https://res.cloudinary.com/verisart/image/upload/w_1024,h_768/s3/prod/images/partner-cert-logos/7740_d48c46c8_original.jpg);
+    background-size: cover;
+    opacity: 0.4;
+    background-position: center center;
+}
+
+.certPreviewOverlay {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+}
+
+.certHeaderWrapper {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    margin: 5px 5px 0px;
+}
+
+.certPreviewContent {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    flex: 1 1 0%;
+}
+
+.certHeaderSection {
+    display: flex;
+    flex: 1 1 0%;
+}
+
+.certHeaderLogo {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px 0px 0px 10px;
+}
+
 
 
 

@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/display/Login matches snapshot 1`] = `
+<div>
+  <div
+    className="loginTitle"
+  >
+    Login
+  </div>
+  <div
+    className="loginBox"
+  >
+    <div
+      className="loginFormWrapper"
+    >
+      <span />
+      <div
+        className="loginFormContent"
+      >
+        <div
+          className="loginWithEmail"
+        >
+          <Connect(TextInput)
+            name="email"
+            placeholder="Email"
+            type="email"
+            value="email"
+          />
+          <div
+            className="loginSpacing"
+          >
+            <Connect(TextInput)
+              name="password"
+              placeholder="Enter Password"
+              type="password"
+              value="password"
+            />
+          </div>
+          <div
+            className="loginFooter"
+          >
+            <Button
+              onClickFn={[Function]}
+              text="Login"
+            />
+          </div>
+          <div
+            className="forgotPasswordWrapper"
+          >
+            <a
+              className="forgotPassword"
+              href="/forgot-password"
+            >
+              Forgot Password
+            </a>
+          </div>
+          <div
+            className="socialWrapper"
+          >
+            <div
+              className="loginWithSocial"
+            >
+              <div
+                className="loginWithSocialWrapper"
+              >
+                <div
+                  className="loginSocialButton"
+                >
+                  <div
+                    className="loginSocialIcon"
+                  >
+                    <img
+                      className="socialIcon"
+                      height="22.5px"
+                      src="test-file-stub"
+                      width="22.5px"
+                    />
+                  </div>
+                  <div
+                    className="loginSocialLabel"
+                  >
+                    Login with Facebook
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="loginWithSocial"
+            >
+              <div
+                className="loginWithSocialWrapper"
+              >
+                <div
+                  className="loginSocialButton"
+                >
+                  <div
+                    className="loginSocialIcon"
+                  >
+                    <img
+                      className="socialIcon"
+                      height="36px"
+                      src="test-file-stub"
+                      width="36px"
+                    />
+                  </div>
+                  <div
+                    className="loginSocialLabel"
+                  >
+                    Login with Google
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

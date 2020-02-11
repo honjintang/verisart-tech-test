@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/display/TextInput matches snapshot when error 1`] = `
+<div
+  className="textInputWrapper"
+>
+  <input
+    className="errorInput textInput"
+    name="email"
+    onChange={[Function]}
+    placeholder="mockplaceholder"
+    type="email"
+    value="lalala"
+  />
+  <div
+    className="errorFieldMessage"
+  >
+    this is an error
+  </div>
+</div>
+`;
+
+exports[`components/display/TextInput matches snapshot when no error 1`] = `
+<div
+  className="textInputWrapper"
+>
+  <input
+    className="undefined textInput"
+    name="email"
+    onChange={[Function]}
+    placeholder="mockplaceholder"
+    type="email"
+    value="lalala"
+  />
+</div>
+`;

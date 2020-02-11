@@ -1,10 +1,4 @@
-import { updateError, redirect } from '~/actions'
-
-export const saveAnswer = (id, value) => ({
-    type: 'SAVE_ANSWER',
-    payload: value,
-    meta: id,
-})
+import { updateError, redirect, saveAnswer } from '~/actions'
 
 const mockRequest = (url, {email, password}) => {
     if( email === 'admin@admin.com' && password === 'admin') {

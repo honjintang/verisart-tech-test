@@ -17,7 +17,7 @@ const mapStateToProps = state => ({
 
 const hasError = (error, name) => error && error.id === name
 
-const TextInput = ({ type, name, placeholder, error, _saveAnswer, _updateError, answer}) => {
+export const TextInput = ({ type, name, placeholder, error, _saveAnswer, _updateError, answer}) => {
     return (
         <div className="textInputWrapper" >
             <input 

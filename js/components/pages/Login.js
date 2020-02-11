@@ -17,7 +17,7 @@ const mapDispatchToProps = dispatch => ({
     _login: ({ email, password }) => dispatch(login({ email, password })),
   })
 
-const Login = ({ _login, email, password }) => (
+export const Login = ({ _login, email, password }) => (
     <div>
         <div className="loginTitle">Login</div>
         <div className="loginBox">
